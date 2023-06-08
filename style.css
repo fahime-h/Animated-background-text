@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+        
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 208, 216);
+}
+        
+h1 {
+    background-image: url("./image/background.webp");
+    background-size: contain;
+    font-size: 120px;
+    color: transparent;
+    font-family: 'Braah One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    -webkit-background-clip: text;
+    animation: stripes 5s infinite alternate;
+}
+
+@keyframes stripes {
+    100% {
+        background-position: 100px 0, 100px 0, 100px 0;
+    }
+}
