@@ -7,11 +7,41 @@ body {
     justify-content: center;
     background-color: rgb(255, 208, 216);
 }
+
+html {
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #cfcbcb;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #757373;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #474646;
+}
+
+.container {
+    width: 100%;
+}
+
+.html {
+    font-size: 16px;
+}
         
 h1 {
-    background-image: url("./image/background.webp");
+    background-image: url("./images/background.webp");
     background-size: contain;
-    font-size: 120px;
+    font-size: 5em;
+    text-align: center;
     color: transparent;
     font-family: 'Braah One', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -22,5 +52,14 @@ h1 {
 @keyframes stripes {
     100% {
         background-position: 100px 0, 100px 0, 100px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .html {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 3.5em;
     }
 }
